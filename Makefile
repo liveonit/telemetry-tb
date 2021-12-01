@@ -20,8 +20,8 @@ get_secret:
 
 .PHONY: up_staging down_staging tear_down_staging
 up_staging:
-	docker-compose --env-file .env.staging up -d
+	docker-compose up -d
 down_staging:
-	docker-compose --env-file .env.staging down
+	docker-compose down
 tear_down_staging:
-	docker-compose --env-file .env.staging down -v
+	docker-compose down -v
